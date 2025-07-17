@@ -9,6 +9,7 @@ spec:
   source:
     repoURL: https://charts.external-secrets.io
     chart: external-secrets
+    targetRevision: v0.18.2
   sources: []
   project: default
   syncPolicy:
