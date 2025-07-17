@@ -6,7 +6,7 @@ metadata:
 spec:
   refreshInterval: 1h
   secretStoreRef:
-    name: awssecretsmanager
+    name: aws-secrets-manager
     kind: ClusterSecretStore
   target:
     name: test-app-secret
