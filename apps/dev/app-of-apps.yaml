@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: git@projects.galgus.net:10443/devops/gcm-gen3-argocd.git
+    repoURL: git@github.com/fhomet/ArgoCDtest.git
     targetRevision: main
     path: apps/dev/infra
   destination:
