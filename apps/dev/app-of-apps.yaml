@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: git@github.com/fhomet/ArgoCDtest.git
-    targetRevision: main
+    targetRevision: test-kustomize
     path: apps/dev/infra
   destination:
     server: https://kubernetes.default.svc
