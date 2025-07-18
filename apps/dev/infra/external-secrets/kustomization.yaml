@@ -1,0 +1,16 @@
+resources:
+  - ../../../../base/infra/external-secrets
+
+configMapGenerator:
+- name: external-secrets-values
+  files:
+    - values.yaml=values-dev.yaml
+
+patches:
+  - target:
+      kind: Application
+      name: external-secrets
+    patch: |-
+      - op: replace
+        path: /spec/source/helm/valueFiles/0
+        value: values.yaml

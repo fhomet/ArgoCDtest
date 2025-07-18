@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: apps-root
+  name: dev-apps
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: https://github.com/fhomet/ArgoCDtest.git
-    targetRevision: HEAD
-    path: apps
+    repoURL: git@projects.galgus.net:10443/devops/gcm-gen3-argocd.git
+    targetRevision: main
+    path: apps/dev/infra
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
