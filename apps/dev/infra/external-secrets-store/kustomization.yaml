@@ -1,5 +1,5 @@
 resources:
-  - ../../../../base/infra/cluster-secret-store
+  - ../../../../base/infra/external-secrets-store
 # Solo necesitas patch si quieres cambiar algo por entorno
 # patchesStrategicMerge:
 #   - clustersecretstore-patch.yaml
