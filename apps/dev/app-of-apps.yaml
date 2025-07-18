@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: git@github.com/fhomet/ArgoCDtest.git
+    repoURL: https://github.com/fhomet/ArgoCDtest.git
     targetRevision: test-kustomize
     path: apps/dev/infra
   destination:
